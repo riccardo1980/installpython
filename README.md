@@ -1,18 +1,18 @@
-#Purpose:  
+# Purpose:  
 Build python version that not relies on LD_LIBRARY_PATH for finding libpython2.7.so
 
-#Method:
+# Method:
 Python is compiled with: LDFLAGS=-Wl,-rpath=${INSTALLDIR}/lib where INSTALLDIR is target installation directory.
 
-#Prerequisites
+# Prerequisites
   - gcc
   - wget
   - internet connection
 
-#Provides
+# Provides
   - python install + pip + virtualenv + setuptools
 
-#Usage
+# Usage
 Open the script and:  
   - set PYTHON_VERSION as requested python version [tested with PYTHON_VERSION=2.7.13]  
   - set VIRTUALENV_VERSION as requested virtualenv version [tested with VIRTUALENV_VERSION=15.1.0]  
