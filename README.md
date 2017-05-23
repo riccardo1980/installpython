@@ -1,7 +1,7 @@
-# Purpose:  
+# Purpose  
 Build python version that not relies on LD_LIBRARY_PATH for finding libpython2.7.so
 
-# Method:
+# Method
 Python is compiled with: LDFLAGS=-Wl,-rpath=${INSTALLDIR}/lib where INSTALLDIR is target installation directory.
 
 # Prerequisites
