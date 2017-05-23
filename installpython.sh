@@ -10,13 +10,13 @@ if [ -d $WORKDIR ]; then
   echo "deleting old WORKDIR: $WORKDIR"
   rm -rf $WORKDIR
 fi
-mkdir $WORKDIR
+mkdir -p $WORKDIR
 
 if [ -d $INSTALLDIR ]; then
   echo "deleting old INSTALLDIR: $INSTALLDIR"
   rm -rf $INSTALLDIR
 fi
-mkdir $INSTALLDIR
+mkdir -p $INSTALLDIR
 
 {
 pushd $WORKDIR
